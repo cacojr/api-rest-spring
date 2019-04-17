@@ -46,6 +46,6 @@ public class ProdutoResource {
 
     @PutMapping(value = "/produto")
     public Produto atualizaProduto(@RequestBody Produto produto){
-        return produtoRepository.saveAndFlush(produto);
+        return produtoRepository.save(produto);
     }
 }

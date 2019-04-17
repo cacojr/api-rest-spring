@@ -20,6 +20,15 @@ public class Produto implements Serializable{
 
     private BigDecimal valor;
 
+    public Produto() {
+    }
+
+    public Produto(String name, BigDecimal quantidade, BigDecimal valor) {
+        this.name = name;
+        this.quantidade = quantidade;
+        this.valor = valor;
+    }
+
     public long getId() {
         return id;
     }
